@@ -1,20 +1,20 @@
 const Question = require('../models/questionSchema'); 
 const Passage = require('../models/passageSchema')
 const APIFEATURES = require('../utilities/apiFeatures')
-const OpenAI = require("openai");
-const {
-    openai, 
-    openai2, 
-    openai3, 
-    openai4, 
-    openai5, 
-    openai6,
-    openai7,
-    openai8, 
-    openai9,
-    openai10,
-    openai11
-} = require('../utilities/openaiApiKeys')
+// const OpenAI = require("openai");
+// const {
+//     openai, 
+//     openai2, 
+//     openai3, 
+//     openai4, 
+//     openai5, 
+//     openai6,
+//     openai7,
+//     openai8, 
+//     openai9,
+//     openai10,
+//     openai11
+// } = require('../utilities/openaiApiKeys')
 
     
     //messages sent
