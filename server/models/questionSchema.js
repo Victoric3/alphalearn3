@@ -36,6 +36,10 @@ const questionSchema = new mongoose.Schema({
   explanation: {
     type: String,
     default: "no official explanation is available at this time"
+  },
+  image: {
+    type: String,
+    default: null
   }
 });
 

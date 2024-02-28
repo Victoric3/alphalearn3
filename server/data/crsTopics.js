@@ -376,5 +376,6 @@ const crsTopics = [
       }
     // Add more topics as needed
   ];
+
   module.exports = {crsTopics}
   

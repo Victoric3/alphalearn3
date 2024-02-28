@@ -4,8 +4,8 @@ const questionController = require('../controllers/questionControllers');
 const authController = require('../controllers/authController')
 
 router
-.route('/McqQuestion/:apiKey/:username')
-.post(authController.apiLimiter, authController.apiKeyProtect, questionController.getAllQuestions);
+.route('/McqQuestion/:username')
+.post(authController.apiLimiter, questionController.getAllQuestions);
 
 
 module.exports = router;
