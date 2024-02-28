@@ -6,7 +6,11 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 const cors = require('cors');
 const rateLimit = require('express-rate-limit');
+<<<<<<< HEAD
 const {callStartServerMultipleTimes} = require('./middlewares/executeGenerateData')
+=======
+
+>>>>>>> 4d4425d3d3eb4c1c40072b2956667a11b3f2cef2
 //body parser
 app.use(express.json());
 rateLimit({
