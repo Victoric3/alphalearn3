@@ -30,22 +30,25 @@ callStartServerMultipleTimes(70, 1);
   
 
 //allow requests from a diffrent port
-// const allowedOrigins = ['https://kingsheart.com.ng'];
-// const corsOptions = {
-//   origin: function (origin, callback) {
-//       if (allowedOrigins.indexOf(origin) !== -1 || !origin) {
-//       callback(null, true);
-//     } else {
-//       callback(new Error('Not allowed by CORS'));
-//     }
-//   },
-//   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-//   credentials: true,
-//   optionsSuccessStatus: 204,
-//   allowedHeaders: 'Content-Type,Authorization',
-// };
+const allowedOrigins = ['https://kingsheart.com.ng', 'http://localhost:3000'];
+const corsOptions = {
+  origin: function (origin, callback) {
+    if (allowedOrigins.indexOf(origin) !== -1 || !origin) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  credentials: true,
+  optionsSuccessStatus: 204,
+  allowedHeaders: 'Content-Type,Authorization',
+};
 
-app.use(cors())
+
+app.use(cors(corsOptions));
+
+// app.use(cors())
 
 // Connect to MongoDB
 const heartDb = `mongodb+srv://${process.env.MONGO_USERNAME}:${process.env.MONGO_PASSWORD}@cluster0.oimxptd.mongodb.net/?retryWrites=true&w=majority`;
