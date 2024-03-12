@@ -30,7 +30,7 @@ callStartServerMultipleTimes(70, 1);
   //, 'http://localhost:3000'
 
 //allow requests from a diffrent port
-const allowedOrigins = ['https://kingsheart.com.ng'];
+const allowedOrigins = ['https://kingsheart.com.ng', 'http://localhost:3000'];
 const corsOptions = {
   origin: function (origin, callback) {
     if (allowedOrigins.indexOf(origin) !== -1 || !origin) {

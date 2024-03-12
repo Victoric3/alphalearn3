@@ -43,6 +43,6 @@ const questionSchema = new mongoose.Schema({
   }
 });
 
-const Question = mongoose.model('Question', questionSchema);
+const Question = mongoose.model('Utme', questionSchema, 'utme');
 
 module.exports = Question;

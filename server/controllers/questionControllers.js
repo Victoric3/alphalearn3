@@ -79,7 +79,7 @@ exports.getAllQuestions = async (req, res) => {
               course: { $regex: new RegExp(course, 'i') }, 
               type: { $regex: new RegExp(type, 'i') } 
           } },
-            { $sample: { size: questions } }, // You can adjust the sample size as needed
+            { $sample: { size: questions } }, // You cant th adjuse sample size as needed
           ]).exec();
           
           // Add the Passage questions to the exam session
@@ -95,7 +95,7 @@ exports.getAllQuestions = async (req, res) => {
     
     // Wait for all queries to complete
     await Promise.all(promises);
-    const limitedQuestions = examSession.length <= 200 ? examSession : examSession.slice(0, 200);
+    const limitedQuestions = examSession.length <= 200 ? examSession : examSession.slice(0, 250);
 
     // Construct and send the exam session as a response
     res.status(200).json({ 
