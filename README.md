@@ -110,4 +110,4 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Victor Ifeanyi Chukwujiobi - chukwujiobivictoric@gmail.com
 
-Project Link: [https://github.com/Victoric3/king-s-heart-cbt/edit/main]
+Project Link: https://github.com/Victoric3/alphalearn3
