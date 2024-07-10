@@ -16,8 +16,8 @@ AlphaLearn3 LMS is a Learning Management System designed to enhance the learning
 1. **Clone the Repository**
 
    ```sh
-   git clone https://github.com/yourusername/alphalearn3-lms.git
-   cd alphalearn3-lms
+   git clone https://github.com/Victoric3/alphalearn3
+   cd alphalearn3
    ```
 
 2. **Install Dependencies**
